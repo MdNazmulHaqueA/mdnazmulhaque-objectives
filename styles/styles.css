@@ -120,7 +120,7 @@ p {
   color: #fff;
 }
 .header-banner {
-  background-image: url('../images/hero-bg.png');
+  background: url('../images/hero-bg.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
