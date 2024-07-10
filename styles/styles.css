@@ -51,16 +51,6 @@ p {
   line-height: 1.625rem;
 }
 
-button {
-  cursor: pointer;
-  text-align: center;
-  font-family: 'Azeret Mono';
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
-}
-
 /* Utility Classes */
 .text-center {
   text-align: center;
@@ -96,6 +86,15 @@ button {
   padding-left: 150px;
   padding-right: 150px;
 }
+.btn {
+  cursor: pointer;
+  text-align: center;
+  font-family: 'Azeret Mono';
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
 
 /* Header Styles */
 .header-navbar {
@@ -114,8 +113,12 @@ button {
   border: 1px solid #0d1321;
   border-radius: 8px;
   opacity: 0.8;
+  transition: 0.4s;
 }
-
+.resume-button:hover {
+  background-color: #0d1321;
+  color: #fff;
+}
 .header-banner {
   background-image: url('../images/hero-bg.png');
   background-size: cover;
@@ -128,37 +131,34 @@ button {
   padding: 26px 221px 45px 221px;
   margin-bottom: 74px;
 }
-
 .header-banner p {
   max-width: 85ch;
 }
 .contact-button {
-  background-color: #0d1321;
-  border: none;
-  border-radius: 8px;
-  padding: 21px 24px;
-}
-
-.contact-button a {
   text-decoration: none;
   color: white;
+  background-color: #0d1321;
+  border: 1px solid #0d1321;
+  border-radius: 8px;
+  padding: 21px 24px;
+  transition: 0.4s;
 }
-.contact-button a:hover {
-  color: #4548e4;
+.contact-button:hover {
+  background: #fff;
+  border: 1px solid #0d1321;
+  color: #0d1321;
 }
 
 /* Why Web Development Styles */
-section.why-dev-section {
+section.why-development {
   padding: 80px 97px;
   background: rgba(13, 19, 33, 0.02);
   border-radius: 1rem;
   margin-bottom: 90px;
 }
-
 .about-web-development {
   padding: 0 47px 48px 47px;
 }
-
 .developer-objectives {
   display: flex;
   flex-direction: column;
@@ -183,16 +183,22 @@ section.why-dev-section {
   width: 240px;
   height: 240px;
 }
-
 .learn-more-button {
   background-color: #fff;
   color: #0d1321;
   padding: 12px 20px;
   border: 1px solid #0d1321;
   opacity: 0.7;
+  transition: 0.3s;
 }
+.learn-more-button:hover {
+  background-color: #0d1321;
+  color: #fff;
+  opacity: 1;
+}
+
 /* Inspiration Section Styles */
-.inspiration-section {
+section.inspiration {
   margin-bottom: 151px;
 }
 .about-inspiration,
@@ -209,10 +215,9 @@ iframe {
 }
 
 /* Current Target Styles */
-.current-target-section {
+section.current-target {
   margin-bottom: 111px;
 }
-
 .target-container {
   display: flex;
   gap: 24px;
@@ -220,6 +225,10 @@ iframe {
 .target-container p a {
   color: #0d1321;
   font-weight: 700;
+  transition: 0.3s;
+}
+.target-container p a:hover {
+  color: #5c5b5b;
 }
 .target-1 {
   border-radius: 16px;
@@ -249,21 +258,18 @@ section.support {
   padding: 64px 48px;
   margin-bottom: 80px;
 }
-
 .about-support {
   padding: 0 220px 24px 220px;
 }
 .support p {
   opacity: 0.7;
 }
-
 .support form {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 10px;
 }
-
 .support form input[type='text'] {
   width: 548px;
   padding: 19px 20px;
@@ -275,12 +281,18 @@ section.support {
 .submit-button {
   width: 120px;
   padding: 17px 20px;
-  border-radius: 8px;
   background: #fff;
+  border: 1px solid #0d1321;
+  border-radius: 8px;
+  transition: 0.4s;
+}
+.submit-button:hover {
+  color: #fff;
+  background: #0d1321;
+  border: 1px solid #fff;
 }
 
 /* footer styles */
-
 footer {
   border-radius: 16px;
   background: rgba(13, 19, 33, 0.03);
@@ -289,13 +301,11 @@ footer {
   align-items: center;
   justify-content: space-between;
 }
-
 #social-links {
   display: flex;
   justify-content: center;
   gap: 24px;
 }
-
 footer a {
   text-decoration: none;
 }
