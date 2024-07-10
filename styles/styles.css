@@ -1,0 +1,65 @@
+/* Reset Styles */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* General Styles */
+body {
+  font-family: 'Azeret Mono', monospace;
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+}
+h1,
+h2,
+h3,
+p {
+  color: #0d1321;
+}
+h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  line-height: 4.25rem;
+}
+h2 {
+  font-size: 2rem;
+  font-weight: 800;
+  line-height: normal;
+}
+h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 2.25rem;
+}
+p {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.625rem;
+}
+
+/* Utility Classes */
+.text-center {
+  text-align: center;
+}
+.text-white {
+  color: #fff;
+}
+
+/* Styles */
+/* Styles */
+/* Styles */
+/* Styles */
+/* Styles */
+/* Styles */
+/* Styles */
+/* Styles */
+/* Styles */
+/* Styles */
+/* Styles */
+/* Styles */
+/* Styles */
+/* Styles */
