@@ -228,15 +228,16 @@ section.current-target {
   display: flex;
   gap: 24px;
 }
-.target-container p a {
+.target-container a {
   color: #0d1321;
+  display: inline-block;
   font-weight: 700;
   transition: 0.3s;
 }
-.target-container p a:hover {
+.target-container a:hover {
   color: #5c5b5b;
 }
-.target-container p a:visited {
+.target-container a:visited {
   color: #782ad1;
 }
 .target-1 {
