@@ -88,20 +88,20 @@ p {
 }
 .btn {
   cursor: pointer;
-  text-align: center;
   font-family: 'Azeret Mono';
   font-size: 20px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
+  text-align: center;
 }
 
 /* Header Styles */
 .header-navbar {
-  height: 131px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 131px;
 }
 .developer-name {
   font-size: 1.75rem;
@@ -109,10 +109,10 @@ p {
 .resume-button {
   background-color: #fff;
   color: #0d1321;
-  padding: 17px 24px;
   border: 1px solid #0d1321;
   border-radius: 8px;
   opacity: 0.8;
+  padding: 17px 24px;
   transition: 0.4s;
 }
 .resume-button:hover {
@@ -124,23 +124,24 @@ p {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  height: 625px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 26px 221px 45px 221px;
+  height: 625px;
   margin-bottom: 74px;
+  padding: 26px 221px 45px 221px;
 }
 .header-banner p {
   max-width: 85ch;
 }
 .contact-button {
-  text-decoration: none;
-  color: white;
   background-color: #0d1321;
   border: 1px solid #0d1321;
   border-radius: 8px;
+  color: white;
+  display: inline-block;
   padding: 21px 24px;
+  text-decoration: none;
   transition: 0.4s;
 }
 .contact-button:hover {
@@ -151,10 +152,10 @@ p {
 
 /* Why Web Development Styles */
 section.why-development {
-  padding: 80px 97px;
   background: rgba(13, 19, 33, 0.02);
   border-radius: 1rem;
   margin-bottom: 90px;
+  padding: 80px 97px;
 }
 .about-web-development {
   padding: 0 47px 48px 47px;
@@ -177,23 +178,28 @@ section.why-development {
 }
 .objective-item h3 {
   color: rgba(13, 19, 33, 0.7);
-  max-width: 88%;
 }
 .developer-objectives img {
-  width: 240px;
   height: 240px;
+  width: 240px;
 }
 .learn-more-button {
   background-color: #fff;
-  color: #0d1321;
-  padding: 12px 20px;
   border: 1px solid #0d1321;
+  color: #0d1321;
+  display: inline-block;
   opacity: 0.7;
+  padding: 12px 20px;
+  text-decoration: none;
   transition: 0.3s;
 }
 .learn-more-button:hover {
   background-color: #0d1321;
   color: #fff;
+  opacity: 1;
+}
+.learn-more-button:visited {
+  color: #782ad1;
   opacity: 1;
 }
 
@@ -230,6 +236,9 @@ section.current-target {
 .target-container p a:hover {
   color: #5c5b5b;
 }
+.target-container p a:visited {
+  color: #782ad1;
+}
 .target-1 {
   border-radius: 16px;
   background: rgba(255, 76, 30, 0.05);
@@ -254,9 +263,8 @@ section.support {
     linear-gradient(0deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%),
     linear-gradient(0deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%),
     url('../images/handshake.jpg') lightgray 50% / cover no-repeat;
-
-  padding: 64px 48px;
   margin-bottom: 80px;
+  padding: 64px 48px;
 }
 .about-support {
   padding: 0 220px 24px 220px;
@@ -271,35 +279,35 @@ section.support {
   gap: 10px;
 }
 .support form input[type='text'] {
-  width: 548px;
-  padding: 19px 20px;
-  border-radius: 8px;
-  border: 1px solid rgba(13, 19, 33, 0.15);
   background: #fff;
+  border: 1px solid rgba(13, 19, 33, 0.15);
+  border-radius: 8px;
   color: rgba(13, 19, 33, 0.4);
+  padding: 19px 20px;
+  width: 548px;
 }
 .submit-button {
-  width: 120px;
-  padding: 17px 20px;
   background: #fff;
   border: 1px solid #0d1321;
   border-radius: 8px;
+  padding: 17px 20px;
+  width: 120px;
   transition: 0.4s;
 }
 .submit-button:hover {
-  color: #fff;
   background: #0d1321;
   border: 1px solid #fff;
+  color: #fff;
 }
 
 /* footer styles */
 footer {
-  border-radius: 16px;
   background: rgba(13, 19, 33, 0.03);
-  padding: 32px 150px;
+  border-radius: 16px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 32px 150px;
 }
 #social-links {
   display: flex;
