@@ -8,6 +8,9 @@
 }
 
 /* General Styles */
+html {
+  scroll-behavior: smooth;
+}
 body {
   background-color: #fff;
   font-family: 'Azeret Mono', monospace;
@@ -17,7 +20,6 @@ body {
 }
 h1,
 h2,
-h3,
 h4,
 p {
   color: #0d1321;
@@ -33,6 +35,7 @@ h2 {
   line-height: normal;
 }
 h3 {
+  color: rgba(13, 19, 33, 0.7);
   font-size: 1.5rem;
   font-weight: 700;
   line-height: 2.25rem;
@@ -65,6 +68,9 @@ button {
 .text-white {
   color: #fff;
 }
+.bg-white {
+  background-color: #fff;
+}
 .mt-8 {
   margin-top: 0.5rem;
 }
@@ -86,6 +92,10 @@ button {
 .p-48 {
   padding: 3rem;
 }
+.pl-pr-150 {
+  padding-left: 150px;
+  padding-right: 150px;
+}
 
 /* Header Styles */
 .header-navbar {
@@ -93,13 +103,12 @@ button {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-left: 150px;
-  padding-right: 150px;
 }
 .developer-name {
   font-size: 1.75rem;
 }
 .resume-button {
+  background-color: #fff;
   color: #0d1321;
   padding: 17px 24px;
   border: 1px solid #0d1321;
@@ -125,11 +134,78 @@ button {
 }
 .contact-button {
   background-color: #0d1321;
+  border: none;
   border-radius: 8px;
   padding: 21px 24px;
 }
-/* Styles */
-/* Styles */
+
+.contact-button a {
+  text-decoration: none;
+  color: white;
+}
+.contact-button a:hover {
+  color: #4548e4;
+}
+
+/* Why Web Development Styles */
+section.why-dev-section {
+  padding: 80px 97px;
+  background: rgba(13, 19, 33, 0.02);
+  border-radius: 1rem;
+  margin-bottom: 90px;
+}
+
+.dev-description {
+  padding: 0 47px 48px 47px;
+}
+
+.developer-objectives {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.objective-container {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+.reverse-direction {
+  flex-direction: row-reverse;
+}
+.objective-item {
+  padding-right: 100px;
+}
+.objective-item h3 {
+  max-width: 88%;
+}
+.developer-objectives img {
+  width: 240px;
+  height: 240px;
+}
+
+.learn-more-button {
+  background-color: #fff;
+  color: #0d1321;
+  padding: 12px 20px;
+  border: 1px solid #0d1321;
+  opacity: 0.7;
+}
+/* Inspiration Section Styles */
+.inspiration-section {
+  margin-bottom: 151px;
+}
+.inspiration-description {
+  padding: 0 144px 48px 144px;
+}
+.inspirational-video-container {
+  border-radius: 16px;
+  border: 1px solid rgba(13, 19, 33, 0.2);
+}
+iframe {
+  border-radius: 16px;
+  overflow: hidden;
+}
+
 /* Styles */
 /* Styles */
 /* Styles */
