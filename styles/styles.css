@@ -9,8 +9,8 @@
 
 /* General Styles */
 body {
+  background-color: #fff;
   font-family: 'Azeret Mono', monospace;
-
   max-width: 1440px;
   width: 100%;
   margin: 0 auto;
@@ -48,6 +48,16 @@ p {
   line-height: 1.625rem;
 }
 
+button {
+  cursor: pointer;
+  text-align: center;
+  font-family: 'Azeret Mono';
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
 /* Utility Classes */
 .text-center {
   text-align: center;
@@ -55,10 +65,68 @@ p {
 .text-white {
   color: #fff;
 }
+.mt-8 {
+  margin-top: 0.5rem;
+}
+.mt-16 {
+  margin-top: 1rem;
+}
+.mt-24 {
+  margin-top: 1.5rem;
+}
+.mt-32 {
+  margin-top: 2rem;
+}
+.p-32 {
+  padding: 2rem;
+}
+.p-40 {
+  padding: 2.5rem;
+}
+.p-48 {
+  padding: 3rem;
+}
 
 /* Header Styles */
+.header-navbar {
+  height: 131px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 150px;
+  padding-right: 150px;
+}
 .developer-name {
   font-size: 1.75rem;
+}
+.resume-button {
+  color: #0d1321;
+  padding: 17px 24px;
+  border: 1px solid #0d1321;
+  border-radius: 8px;
+  opacity: 0.8;
+}
+
+.header-banner {
+  background-image: url('../images/hero-bg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 625px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 26px 221px 45px 221px;
+  margin-bottom: 74px;
+}
+
+.header-banner p {
+  max-width: 85ch;
+}
+.contact-button {
+  background-color: #0d1321;
+  border-radius: 8px;
+  padding: 21px 24px;
 }
 /* Styles */
 /* Styles */
